@@ -9,15 +9,16 @@ _The Teaching Machine Network Theme is a Child of Wordpress TwentyFourteen nativ
 
 Included in this repository are the core php/css files Wordpress uses. In addition, the Teaching Machine Network subdomain also utilizes a number of WP Plug-ins for additional functionality [not included in this repository].
 <br>
+<br>
 Featured projects (sticky posts) need the 'featured' tag added to them in the Post editor. Featured Images for Posts are added in the usual way (Post editor) and support GIF file format, although not all dimensions of .gif are supported. 
 
 ![image](http://web.gavingamboa.net/image/networkTMtheme.jpg)
 
 Items *not* included in this repository:
 <br>
-wordpress twentyfourteen theme (required)
-assets (jpg, png)
-additional plug-ins (currently in use on network.teachingmachine.tv)
+wordpress twentyfourteen theme (required)<br>
+assets (jpg, png)<br>
+additional plug-ins (currently in use on network.teachingmachine.tv)<br>
 
 
 ### Visit The Site
