@@ -1,0 +1,400 @@
+/*
+Theme Name:     NETWORK.TEACHINGMACHINE.TV
+Theme URI:      http://network.teachingmachine.tv/
+Description:    Child theme for the Twenty Fourteen theme
+Author:         gavin gamboa
+Author URI:     http://web.gavingamboa.net/
+Template:       twentyfourteen
+Version:        0.1.0
+*/
+
+@import url("../twentyfourteen/style.css");
+
+.site {
+	max-width: 100%;
+}
+
+a {
+	color: #000;
+	text-decoration: none;	
+}
+
+a.more-link {
+	color: #000;
+	text-decoration: underline;
+	font-size: 18px;
+	text-transform: uppercase;	
+}
+
+a:hover {
+    color: #f53c7d;
+    text-decoration: none;
+}
+
+.entry-title a:hover {
+	color: #f53c7d;
+}
+
+.cat-links a:hover {
+	color: #f53c7d;
+}
+
+.entry-content a {
+    text-decoration: none;
+}
+
+.widget a:hover {
+	color: #f53c7d;
+}
+
+embed, iframe, object, video {
+    margin-bottom: 10px;
+}
+
+.site-header {
+	max-width: 100%;
+}
+
+.site-title a:hover {
+    color: #f53c7d;
+}
+
+.site-description {
+    display: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.grid .featured-content .entry-header {
+    height: 80px;
+}
+
+.site-content .entry-header, 
+.site-content .entry-content, 
+.site-content .entry-summary, 
+.site-content .entry-meta, 
+.page-content {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.full-width .site-content .has-post-thumbnail .entry-header, 
+.full-width.singular .site-content .hentry.has-post-thumbnail {
+    margin-top: 0;
+}
+
+.entry-title {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.09091;
+    margin: 5px 0 12px;
+    text-transform: uppercase;
+}
+
+.hentry {
+    margin: 0 auto 0 0;
+    max-width: 100%;
+}
+
+.content-area, .content-sidebar {
+    padding-top: 0;
+}
+
+.full-width .post-thumbnail img {
+    display: block;
+    margin: 0 0 0 0;
+}
+
+.list-view .site-content .hentry:first-of-type, 
+.list-view .site-content .hentry.has-post-thumbnail {
+    border-top: 0 none;
+    padding-top: 0;
+}
+
+.list-view .site-content .hentry {
+    border-top: 0 solid rgba(0, 0, 0, 0);
+    padding-top: 48px;
+}
+
+
+.feat_img {
+      width:100%;
+      height:375px;
+      background-position: center center;
+      display:block;
+}
+
+/* lighten feat_img on hover */
+.feat_img:hover {
+	/*opacity: 0.90;*/
+}
+
+.site-navigation .current_page_item > a, 
+.site-navigation .current_page_ancestor > a, 
+.site-navigation .current-menu-item > a, 
+.site-navigation .current-menu-ancestor > a {
+    color: #de2672;
+    font-weight: 900;
+}
+
+.archive-title, .page-title {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 44px 0 0 0;
+}
+
+.primary-sidebar {
+    padding-top: 48px;
+}
+
+.widget {
+    -moz-hyphens: auto;
+    font-size: 14px;
+    line-height: 1.28571;
+    margin-bottom: 33px;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.widget, .primary-sidebar .widget {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.primary-sidebar .widget {
+    text-transform: uppercase;
+}
+
+.site-info {
+	
+}
+
+.footer-sidebar {
+	width: 100%;
+	padding-top: 70px;
+}
+
+.footer-sidebar .widget .widget-title, 
+.primary-sidebar .widget .widget-title {
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.63636;
+    margin-bottom: 8px;
+}
+
+.footer-tag {
+	font-size: 16px;
+	color: #e2e1e3;
+	text-align: left;
+}
+
+.footer-sidebar .widget {
+    -moz-box-sizing: none;
+    float: left;
+    padding: 0 0 0 0;
+    margin-left:222px;
+    width: 512px;
+    height: 460px;
+}
+
+
+.paging-navigation .page-numbers {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+/* HIDE TAGS */
+.tag-links {
+	display: none;
+}
+
+.search-toggle {
+	background-color: #969795;
+}
+
+.search-toggle:hover,
+.search-toggle.active {
+	background-color: #d8dbd9;
+}
+
+.search-box {
+	background-color: #969795;
+}
+
+
+/*fix the collapsed menu icon from drifitng too far up*/ 
+.menu-toggle:before {
+	display: inherit;
+}
+
+/*fix first post image getting cropped in category view*/
+/*------*/
+.full-width .site-content .has-post-thumbnail .entry-header,
+	.full-width .site-content .hentry.has-post-thumbnail:first-child {
+		margin-top: 0;
+	}
+	
+.full-width .site-content .hentry.has-post-thumbnail:first-child {
+		margin-top: 0;
+	}
+/*------*/
+
+@media screen and (max-width: 400px) {
+	
+	body{
+	overflow-x: hidden;
+	}
+	
+	.site-title {
+    	float: left;
+    	font-size: 10px;
+    	font-weight: 700;
+    	line-height: 48px;
+    	margin: 0;
+	}
+	
+	/*turn-off search toggle */
+	.search-toggle {
+    	display: none;
+	}
+	
+	.feat_img {
+    	background-position: center center;
+    	height: 175px;
+	}
+	
+	.list-view .site-content .entry-title {
+		clear: none;
+		font-size: 22px;
+		font-weight: 500;
+		line-height: 1.2;
+		margin-bottom: 6px;
+		text-transform: uppercase;
+	}
+	
+	.entry-title {
+    	font-size: 26px;
+    	font-weight: 300;
+    	line-height: 1.09091;
+    	margin: 5px 0 12px;
+    	text-transform: uppercase;
+	}
+	
+	.footer-sidebar .widget {
+    	margin-left:0;
+    	width: 95%;
+	}
+	
+	.site-info {	
+		margin-top: -50px;
+		}
+	.footer-tag {
+		font-size: 6px;
+	}
+	
+	/* fix ((?)) double-tap hover issue 
+	in iOS WebKit when navigating in Slider */
+	.featured-content a:hover {
+		display: none;
+	}
+}
+
+
+@media screen and (min-width: 401px) {
+	
+	/*turn-off search toggle */
+	.search-toggle {
+    	display: none;
+	}
+	
+	.footer-sidebar .widget {
+	    margin-left:0;
+	    width: 95%;
+	}
+	.site-info {	
+		margin-top: 115px;
+		}
+	.footer-tag {
+		font-size: 10px;
+	}
+}
+
+
+@media screen and (min-width: 594px) {
+	body{
+		overflow-x: hidden;
+	}
+	
+	.footer-sidebar .widget {
+    	margin-left:0;
+	}
+}
+
+
+@media screen and (min-width: 673px) {
+	.content-sidebar {
+		border: 0;
+		float: right;
+		margin-left: -33.33333333%;
+		padding: 0 0 0 10px;
+		width: 33.33333333%;
+		}	
+		
+	.site-info {
+		padding: 15px 30px 0 30px;
+		margin-top: 90px;
+		}
+		
+	.footer-sidebar .widget {
+    	margin-left:0;
+    	width: 512px;
+	}
+}
+
+
+
+@media screen and (min-width: 783px) {
+	
+	.archive-header, .page-header {
+	    max-width: 1200px;
+	}
+	
+	.primary-navigation li:hover > a,
+		.primary-navigation li.focus > a {
+			background-color: #bf37f0;
+			color: #fff;
+		}
+}
+
+@media screen and (min-width: 1008px) {
+	
+	.content-sidebar {
+		margin-left: -29.04761904%;
+		width: 29.04761904%;
+	}
+	.footer-sidebar .widget {
+	    margin-left:222px;
+	    width: 512px;
+	}
+	.footer-tag {
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 1218px) {
+
+	.full-width .archive-header,
+	.full-width .comments-area,
+	.full-width .image-navigation,
+	.full-width .page-header,
+	.full-width .page-content,
+	.full-width .post-navigation,
+	.full-width .site-content .entry-header,
+	.full-width .site-content .entry-content,
+	.full-width .site-content .entry-summary,
+	.full-width .site-content footer.entry-meta {
+		margin-left: 0;
+	}
+}
