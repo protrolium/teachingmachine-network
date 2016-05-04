@@ -10,99 +10,41 @@ Version:        0.1.0
 
 @import url("../twentyfourteen/style.css");
 
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-	background-color: #000;	
-	color: #fff;
-}
-
-::selection {
-	background: #blue;
-	color: #000;
-	text-shadow: none;
-}
-
-::-moz-selection {
-	background: #fff;
-	color: #000;
-	text-shadow: none;
-}
-
 .site {
 	max-width: 100%;
 }
 
 a {
-	color: #fffef6;
-	text-decoration: none;
+	color: #000;
+	text-decoration: none;	
 }
 
 a.more-link {
-	color: #fff;
+	color: #000;
 	text-decoration: underline;
 	font-size: 18px;
 	text-transform: uppercase;	
 }
 
 a:hover {
-    color: #00a7f2;
+    color: #f53c7d;
     text-decoration: none;
 }
 
-a:active {
-	color: #ecc817;
-}
-
-p {
-    font-size: 1em;
-}
-
-.entry-title a {
-	color: #fff;
-}
-
 .entry-title a:hover {
-	color: #fff;
-	text-decoration: underline;
-}
-
-.cat-links a {
-    color: #fff;
+	color: #f53c7d;
 }
 
 .cat-links a:hover {
-	color: #000;
-	background-color: #fff;
+	color: #f53c7d;
 }
 
 .entry-content a {
-    text-decoration-line: underline;
-	-moz-text-decoration-line: underline;
-	-moz-text-decoration-color: white;	
-}
-
-.entry-content a:hover {
-	color:#fff;
-
-	/*color: #000;
-	background-color: white;*/	
-}
-
-.entry-date .entry-date a {
-    color: #cccbcd;
-}
-
-.entry-date > a, .author > a {
-    color: #c5c9c5;
-}
-
-.entry-date > a:hover, .author > a:hover {
-    color: #ecc817;
+    text-decoration: underline;
 }
 
 .widget a:hover {
-	color: #000;
-	background-color: #fff;
+	color: #f53c7d;
 }
 
 embed, iframe, object, video {
@@ -114,9 +56,7 @@ embed, iframe, object, video {
 }
 
 .site-title a:hover {
-    color: #000;
-    background-color: #fff;
-    
+    color: #f53c7d;
 }
 
 .site-description {
@@ -135,7 +75,6 @@ embed, iframe, object, video {
 .site-content .entry-summary, 
 .site-content .entry-meta, 
 .page-content {
-	background-color: #000;
     margin: 0 auto;
     /*max-width: 1100px;*/
     /*max-width: 1200px;*/
@@ -212,13 +151,8 @@ embed, iframe, object, video {
 .site-navigation .current_page_ancestor > a, 
 .site-navigation .current-menu-item > a, 
 .site-navigation .current-menu-ancestor > a {
-    color: #ecc817;
+    color: #de2672;
     font-weight: 900;
-}
-
-.post-navigation a:hover,
-.image-navigation a:hover {
-	color: #fff;
 }
 
 .archive-title, .page-title {
@@ -268,8 +202,7 @@ embed, iframe, object, video {
 }
 
 .footer-tag {
-	/*font-size: 16px;*/
-	font-size: 12px;
+	font-size: 16px;
 	color: #e2e1e3;
 	text-align: left;
 }
@@ -285,33 +218,10 @@ embed, iframe, object, video {
     height: 460px;
 }
 
-.footer-name {
-	margin-bottom: 0;
-}
-
 
 .paging-navigation .page-numbers {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 200;
-}
-
-.paging-navigation .page-numbers.current {
-	/*border-top: 5px solid #ceb015;*/
-	border-top: 5px solid #fff;
-}
-
-.paging-navigation a:hover {
-	border-top: 5px solid #fff;
-	color: #2b2b2b;
-}
-
-.slider-control-paging a:hover:before {
-	background-color: #ecc817;
-}
-
-.slider-control-paging .slider-active:before,
-.slider-control-paging .slider-active:hover:before {
-	background-color: #ceb015;
 }
 
 /* HIDE TAGS */
@@ -337,11 +247,6 @@ embed, iframe, object, video {
 
 .search-box {
 	background-color: #969795;
-}
-
-.site-info a:hover {
-	color: #000;
-	background-color: #fff;
 }
 
 
@@ -409,20 +314,16 @@ embed, iframe, object, video {
 	}
 	
 	.site-info {	
-		/*margin-top: -50px;*/
-		margin-top: -20px;
+		margin-top: -50px;
 		}
 	.footer-tag {
 		font-size: 6px;
 	}
-	.footer-name {
-		font-size: 12px;
-	}
 	
 	/* fix ((?)) double-tap hover issue 
 	in iOS WebKit when navigating in Slider */
-	/*.featured-content a:hover {
-		display: none;*/
+	.featured-content a:hover {
+		display: none;
 	}
 }
 
@@ -489,10 +390,10 @@ embed, iframe, object, video {
 	
 	.primary-navigation li:hover > a,
 		.primary-navigation li.focus > a {
-			background-color: #fff;
-			color: #000;
+			background-color: #bf37f0;
+			color: #fff;
 		}
-  }
+}
 
 @media screen and (min-width: 1008px) {
 	
